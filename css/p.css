@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: justify;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAwFBMVEXoaGfn5+f/V3CsrKzNzc3a2trpYWDN0NDVtrboZmbn4eLod3f/U23n6+vntrXl8vD5fY7v7+9/f3/5an3/S2f/Ql14eHj/QmGCgoLj+/js0NP8ZnzxrLS4uLjx8fG+vr70oqzvusGQkJCcnJylpaX4i5n9YHfxrrbtw8jnpabdoaG+mJjoyMi7oKG2pKPobW3fe3vXhISnr6/Si4rMkZHvY2r/MFH4gpP2j5zq2Nrk+PX0m6f1Xm7/JEqioqLYr69wWm7OAAAD80lEQVR4nO3da3eaSACA4QBe1gYXuarRRpMmaraXtHbbbGg3+///1c4MiiBDQPlge3yfD0RMPnDewzAOHs3FBQAAAAAAAAAAAAAAAAAAAAAAOLVep65TH+mvqPf48Gc9f3V6pz7YX07v0ujX1H1Pv32dD32jptb6Y49+eZ03desZLWv96YJ+OQfls6xPj/TLOjCfZdEv6+B81iX9dg7PZ33mBWDqiHxr+qWOyGetv9Bv45h81vor/RJH5bPWf9NPOS4f/TaOzGet37OAuzgs312u30fyHZTPyOVjASwdkq99l6EWwKc++pM7JJ8IuNMS/jj7+eOwfNmSrVaXfJ2+U4l8Ot9+Cuaggu/fv9HdkD73fN9Mxa4Sht91A/zc85k1BWF4rxm/5JPn3na7OdW2z6gf9jafT74CFelpIraLJ3vxz71iL+4D+bx4yvQHNvlKqVNrfBOYwXw8mY5jx4njcXAznop+gTGeDJ+dgHylVL44yefb/mTpDPzJ8KbviGJzx/GHV33ylVP5nG0+O5g6E9sMRL6bIOj3yVdhk29oq3xmmm8VB0tnRb4KSb6r+Xy+ijP5nIlo9+FHTL7XJflUilw+OX4Xc/JVSKaO5fdh+CM7eB3TjlfhlHwV8lNHNt9A7JCvQmk+097mG8p1CPm0yvIt5BmX5BsMBk8L8mllVx2+KLYciwWcWHWoATsd+8PneCwsQ/LpqDXvJNna6dZMtmrHlxi8eq/fplJBba59pV7PtyPyDchX8LNmvjD890pzt/7c89XrZw9Dc6V7s+js8ymd6s9zONqPLpBP4n3eRsjXCPkaKcnn5h+6buEvyCfp87nWLM30Inbfvi30I5+kzefeetGmlzuKLLcdRdY1+TR0+WS97enWjaK24b54hX7kkzT5svVEuJHo5r4r9COfVMyn6qWpPE9dBa8L/cgnFfLl6rkzL0oeFfqRT9rPlz/3xN6Lm+nnki9vL1++niGm3G76q3w/8kn5fCKRN9slcu+8UWbvZTelkC+xl2808tqZEep5mdfL4kKYDmXyJfavfd4o2vWbRVEm7Szybhm8eYWZN9NPXAjfuSX1yKcUX/ft+omJo1VWj3yKZtWx7edau4mjUI98im7Nu+nnRunEUaxHPkV7x0X2M4yWvFtQVo98iv5+n+d57vVtmqxdrEc+peRu8+jOFadce7t7W6hHPqUk37W89u0Wb9ysL8FbRY2QrxHyNUK+RsjXCPkaIV8j5GuEfI2QrxHyNUK+RsjXSOe59nfWF/P9d/b5eg9H5hP1up/5Ar/OQ+3/OJFhdLvd1hfqiX6Pl8fhyyOV3pFOfdwAAAAAAAAAAAAAAAAAAAAAgN/e/1KWfdQlJ/n/AAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+background-size: cover;
+
+}
+body#principal{
+    background-image: url();
+    background-size: 200px,200px;
+}
+div.centro{
+    padding-left: 10%;
+    padding-right: 20%;
+}
+div.izquierda{
+    padding-right: 90%;
+    position: fixed;
+}
+p#notaizquierda{
+    color: black;
+    font-size: small;
+    padding: 10px;
+    border-style: ridge;
+    font-weight: bold;
+    background: aquamarine;
+    border-radius: 10px;
+}
+div.derecha{
+    padding-left: 80%;
+    position: fixed;
+}
+aside#nota1{
+    padding: 5px;
+    background-color: rgb(255, 81, 0);
+    
+    
+}
+section header{
+    background: white;
+    padding: 10px;
+}
+h1{
+    font-size: large;
+    color: aliceblue;
+    background-color: blue;
+    text-align: center;
+}
+h2{
+    color: blue;
+    border-bottom-color:rgb(67, 93, 145) ;
+    border-block-start: solid;
+}
+h3{
+    color: blue;}
+em.termino{
+    color: darkblue;
+
+    }
+    em.propiedad{
+        color: darkblue;
+        font-weight: bold;
+        font-style: normal;
+
+    }
+    em.valor{
+color: red;
+
+    }
+    aside:hover{
+        background-color: antiquewhite;
+    }
+    p.inicial::first-letter{
+        font-size: large;
+        font-family: cursive;
+
+    }
+    header:hover{
+        background-color: antiquewhite
+    }
+img#pflotante{
+    float: inline-end;
+}
+img#Absoluto{
+    position: absolute;
+}
+.cajaPadre{
+    margin: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+}
+img#pAbsolute{
+    padding: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+
+  
+}
+img#Relativo{
+position: relative;
+}
+img#pfijo{
+position: fixed;
+}
+img#pPaginado{
+    position: page;
+    top: 200px;
+
+}

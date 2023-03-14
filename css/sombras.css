@@ -1,0 +1,33 @@
+body{
+    background: aquamarine;
+}
+h1{
+    text-shadow: 2px 2px 5px red;
+}
+.profundidad{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px red;
+
+}
+/*
+1:arriba top
+2:abajo bottom
+3:izq left
+
+*/
+.card{
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px, 0px 4px 8px, 0px 4px 8px;
+    background: rgb(253, 255, 253);
+    font-size: 40px;
+}
+.header{
+    color: aqua;
+    background: blue;
+    font-size: 35px;
+    padding: 10px;
+}
+.contenedor{
+    padding: 10px;
+}

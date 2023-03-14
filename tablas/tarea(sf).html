@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p><h1>dfn</h1> <br>sirve para marcar el término que se quiere definir,cambia la fuente del texto <br>
+        ejemplo: 
+    </p>
+<table>
+    <button id="ba">
+        <p>sin dfn: <br>
+        DEFINICION
+        </p>
+     </button>
+     <button id="bb">
+        <p>con dfn: <br>
+<dfn>        DEFINICION
+</dfn>        </p>
+     </button>
+        
+        
+</table>
+
+    </table>
+       <br>
+    <div>
+        <h1>rowspan</h1><br>
+        el atributo colspan sirve para indicar cuantas columnas abarcara una celda
+        <br>ejemplo: colspan="2"
+        <br><br>
+            <table border="1px" style="background-color: aqua;">
+                <tr>
+                  <td>Columna 1</td>
+                  <td>Columna 2</td>
+                </tr>
+                <tr>
+                  <td colspan="2">abarca dos columnas :)</td>
+                </tr>
+              </table>
+              <br>
+              <div>
+                el atributo rowspan es igualmente para abarcar pero ahora filas <br>
+                ejemplo: rowspan="2" <br> <br>
+                <table border="1px" style="background-color: aquamarine;">
+                    <tr>
+                      <td>Fila 1, Columna 1</td>
+                      <td>Fila 1, Columna 2</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">abarca dos filas</td>
+                      <td>Fila 2, Columna 2</td>
+                    </tr>
+                    <tr>
+                      <td>Fila 3, Columna 2</td>
+                    </tr>
+                  </table>
+                  
+              </div>
+              
+    </div>
+    <br>
+    <div><h1>header</h1> <br>
+    sirve para representar el encabezado,se usa normalmente para colocar un menu de navegacion <br>
+    ejemplo: <br>
+    <table>
+        <header>
+            <h3>encabezado</h3>
+            <nav>
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </nav>
+          </header>
+    </table>
+
+    </div>
+    <div>
+        <h1>shape:poly</h1>
+        <br>
+        
+    </div>se utiliza en conjunto con la etiqueta "< area>" para poder interactuar en algunas áreas de  algunas imagenes,shape es el area que va ser accionada,el cual puede tener distintas formas ya sea cuadrado,circulo,rectangulo.utilize map para marcar el vertice en el que actuaria el link de la imagen <br>
+    ejemplo:
+    <br>
+    <img src="conc.png" usemap="#mi-mapa">
+
+<map name="mi-mapa">
+  <area shape="poly" coords="0,0,100,0,100,100,0,100" href="https://www.ohchr.org/es/stories/2022/11/woman-life-freedom-activist-continues-her-fight-womens-rights">
+</map>
+
+<br>
+
+
+</body>
+
+  
+  <style>
+    
+    #a{
+        background-color: red;
+    }
+    #b{
+        background-color: rgb(0, 255, 17);
+    }
+    #ba {
+  background-color: #ff0000; 
+  border: none; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 10px; 
+}
+#ba:hover {
+  background-color: #8d1515; 
+}
+
+#bb {
+  background-color: #2faa14; 
+  border: none; 
+  color: white
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 10px;
+}
+#bb:hover {
+  background-color: #2e8c0e; 
+}
+
+
+
+
+</style>
+</html>

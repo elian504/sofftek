@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+    <article>
+        <div class="izquierda">
+            <p id="notaizquierda">
+                notas de css nivel 3
+            </p>
+        </div>
+        <div id="derecha">
+            <aside id="nota1">
+                la especificacion del w3c para el modelo del posicionamiento aun se encuentra a nivel  de borrador de trabajo y puede consultarse en el sitio del 
+                <a href="https://www.w3.org/">w3c</a>
+            </aside>
+        </div>
+        <div class="centro">
+<h1>posicionamiento</h1>
+<header>
+    css permite especificar las posiciones del texto y otros elementos cualquier elemento del arbol de documentos se puede organizar de manera independiente al orden del documento
+</header>
+<section>
+    <h2>el viewport</h2>
+    <p class="normal,inicial">
+        Los agentes de usuario para medios continuos (navegadores) generalmente ofrecen al usuario una vista (ventana o área de visualización de la pantalla) a través de la cual los usuarios consultan el documento. Los navegadores pueden
+        cambiar el tamaño del documento cuando cambia el tamaño del <em class="termino">viewport</em>
+
+    </p>
+    <p class="normal">Cuando la ventana es menor que el área del lienzo en el que se representa el documento, el agente de usuario puede ofrecer un mecanismo de desplazamiento. Como máximo hay un  <em class="termino">viewport</em>por cada lienzo , pero los navegadores pueden procesar más de un lienzo
+        (es decir, proporcionar diferentes vistas del mismo documento).</p>
+</section>
+
+        </div>
+    </article>
+    <section>
+        <h2>bloques contenedores</h2>
+        <p class="normal,inicial">
+            la pocision y tamaño de la caja de un elemento se calculan con respecto a los borde de una caja rectangular llamada <em class="termino">bloque de contencion</em>en general las cajas actuan como contenedores para las cajas descendientes,decimos que una caja establece el bloque contenedor para sus descendientes.la frase bloque contenedor de caja significa el bloque contenedor en el que vive la caja,no el que genera
+        </p>
+        <p class="normal">
+            a cada caja se le asigna una posicion con respecto a su bloque contenedor,pero no es contenida por el ya que puede desbordarlo
+        </p>
+        <p class="normal">
+            la posicion y el tamaño de la caja de un elemento (s) a veces se calculan con relacion al bloque contenedor del elemento el bloque contenedor de un elemento estatico o relativo se define en el modelo de la caja para los valores 
+            <em class="valor">fixed</em><em class="valor">absolute</em><em class="valor">center</em>
+            y <em class="valor">page</em>para la propiedad <em class="propiedad">position</em>se le define de la siguiente forma:
+        </p>
+        <ol class="listanivel1">
+            <li class="itemnivel1">
+                <em class="valor">fixed</em>el bloque contenedor es establecido por el 
+                <em class="termino">viewport</em>en el caso de los medios continuos o el area de la pagina en caso de los medios paginados.las cajas no se mueven cuando se hace el desplazamiento(scrolling)por el documento
+            </li>
+        <li class="itemlivel1">
+            <em class="valor">absolute</em>el bloque contenedor se establece con base en el ancestro mas cercano ,siguiendo las siguientes reglas:
+            <ol class="listanivel2">
+                <li class="itemnivel2">si el ancestro es nivel bloque contenedor lo conforma el relleno del ancestro  </li>
+                <li class="itemnivel2">
+                    si el ancestro es a nivel inline,el bloque contenedor depende de la propiedad <em class="propiedad">direction</em>del ancestro:
+                    <ol class="listanivel3">si la direccion es <em class="valor">itr</em>
+                        la esquina superior izq es la primera caja generada por el ancestro y la esquina inf derecha es la orilla inferior derecha de la ultima caja del ancestro 
+                    
+                    </ol>
+                    <p class="nota">
+                        en algunos casos,cuando la linea continua en otro otro renglon puede parecer que se intercambian las posiciones izquierda derecha .
+                    </p>
+                </li>
+            </ol>
+        </li>
+        
+        <li class="itemnivel1">
+            <em class="valor">center</em>: el bloque contenedor se establece con relación al ancestro más cercano con propiedad <em class="propiedad">position</em>
+            <ol class="listanivel2">
+                <li class="itemnivel2">
+                    En el caso de que el ancestro sea de nivel de bloque, el bloque contenedor se forma por el espacio de relleno del ancestro.
+                </li>
+                <li class="itemnivel2">
+                    En caso de que el ancestro sea de nivel inline, el bloque contenedor depende de las orillas del contenido y de las cajas generadas por el ancestro. El extremo superior, el extremo derecho, el extremo inferior y el extremo izquierdo determinan las orillas
+                    del bloque contenedor.
+                </li>
+            </ol>
+        </li>
+        <li class="itemnivel1">
+            <em class="valor">page</em>: si el elemento se encuentra dentro de un medio paginado o de una región, el bloque contenedor es el bloque contenedor inicial. Este es el <em class="termino">viewport</em> o el &aacute,rea de la página
+            cuando se encuentra en un medio paginado. Las regiones son &aacute,reas múltiples donde puede fluir el contenido, en este caso se trata de una región individual. Cuando un elemento es posicionado no se encuentra en un medio paginado
+            o en una región, el bloque contenedor se determina por el modelo de posicionamiento absoluto.
+        </li>
+        <li class="itemnivel1">
+            Si no hay ningún ancestro, el bloque contenedor es el bloque contenedor inicial.
+        </li>
+    </ol>
+</section>
+<section>
+    <h2>Esquemas de posicionamiento</h2>
+    <p class="normal, inicial">
+        En CSS, una caja puede ser ubicada de acuerdo a tres esquemas de posicionamiento:
+    </p>
+    <ol class="listanivel1">
+        <li class="itemnivel1">
+            <em class="termino"><a id="ejemplo1" class="ejemplo" href="ejemplos15.html">
+                Flujo normal</a></em>, incluye el formateo de bloque de cajas a nivel de bloque, formateo inline de cajas a nivel de línea y posicionamiento relativo de cajas a nivel de bloque y cajas a nivel de línea.
+        </li>
+        <li class="itemnivel1">
+            <em class="termino"><a id="ejemplo2" class="ejemplo" href="ejemplo15-2.html">
+                Flotantes</a></em>, una caja es acomodada conforme al flujo normal, entonces se toma fuera del flujo y se posiciona, típicamente a la izquierda o a la derecha. El contenido puede fluir a lo largo del
+            flotante.
+        </li>
+        <li class="itemnivel1">
+            <em class="termino"><a id="ejemplo3" class="ejemplo" href="Ejemplo15-03.html">
+                Posicionamiento absoluto</a></em>, una caja es removida completamente del flujo normal y asignada en una posición con respecto al bloque contenedor.
+        </li>
+    </ol>
+    <p class="normal">
+        Un elemento es sacado del flujo si es flotante, posicionado de manera absoluta o si es el elemento raíz. Un elemento es metido al flujo si no está fuera del flujo. El flujo de un elemento A en el conjunto consistente de A y todos los elementos dentro
+        del flujo cuyo ancestro fuera del flujo sea el más cercano a A.
+    </p>
+    <h3><a id="ejemplo4" class="ejemplo" href="Ejemplo15-04.html">
+                Posicionamiento relativo</a></h3>
+    <p class="normal, inicial">
+        Una vez que una caja ha sido ubicada conforme al flujo normal o al flotante, puede tener un desplazamiento relativo a su posición. Esto es llamado posicionamiento relativo. Desplazando una caja (B1) de esta forma no tiene efecto en la caja (B2) que le
+        sigue. Esto implica que las cajas se pueden empalmar.
+    </p>
+    <h3><a id="ejemplo5" class="ejemplo" href="Ejemplo15-03.html">
+            Posicionamiento absoluto</a></h3>
+    <p class="normal, inicial">
+        Una caja se desplaza explícitamente con respecto a su bloque contenedor. Se remueve completamente del flujo normal, pero sus contenidos no flotan alrededor de ninguna otra caja. Pueden ocultar los elementos de otra caja (o ser ocultados) dependiendo de
+        los niveles de apilamiento de las cajas sobrepuestas.
+    </p>
+    <h3><a id="ejemplo6" class="ejemplo" href="Ejemplo15-06.html">
+            Posicionamiento centrado</a></h3>
+    <p class="normal, inicial">
+        Una caja se centra explícitamente con respecto a su bloque contenedor. Se remueve completamente del flujo normal y establece un nuevo bloque contenedor para los hijos que sigan un flujo normal y los descendientes posicionados de manera absoluta. Sin embargo,
+        los contenidos de un elemento posicionado como centrado no fluyen alrededor de otras cajas. Pueden ocultar los contenidos de otra caja (o ser ocultados) dependiendo de los niveles de apilamiento de las cajas sobrepuestas.
+    </p>
+    <aside id="nota2">
+        Aún cuando este tipo de posicionamiento se encuentra en el borrador de la documentación del estándar CSS 3, posiblemente aún no haya sido implementado. Podría ser que incluso desaparezca.
+    </aside>
+    <h3><a id="ejemplo7" class="ejemplo" href="Ejemplo15-07.html">
+            Posicionamiento paginado</a></h3>
+    <p class="normal, inicial">
+        Una caja es explícitamente desplazada con respecto a su bloque contenedor. Se remueve completamente del flujo normal y establece un nuevo bloque contenedor para los hijos que sigan un flujo normal y los descendientes posicionados de manera absoluta. Sin
+        embargo, los contenidos de un elemento posicionado como centrado no fluyen alrededor de otras cajas. Pueden ocultar los contenidos de otra caja (o ser ocultados) dependiendo de los niveles de apilamiento de las cajas sobrepuestas.
+    </p>
+    <p class="normal">
+        Para medios paginados, las cajas con posiciones de página son generadas solamente en la pagina inicial donde el elemento de la posición de página existe. Las cajas con posición de página que son mayores que el área de la página son recortadas y la parte
+        remanente de la caja se ubica en las siguiente página.
+    </p>
+    <h3><a id="ejemplo8" class="ejemplo" href="Ejemplo15-2.html">
+        Posicionamiento fijo</a></h3>
+    <p class="normal, inicial">
+        El posicionamiento fijo es similar al posicionamiento absoluto, la única diferencia es que para una caja con posicionamiento fijo, el bloque contenedor se establece en base al
+        <em class="termino">viewport</em>. Para medios continuos, las cajas fijas no se mueven cuando se hace scrolling, actuando de manera similar a imágenes de fondo fijas. Para medios paginados, las cajas con posiciones fijas se repiten
+        en cada página, lo que es útil si se usa como firma al final de cada página. Las cajas con posicionamiento fijo que son mayores que la página son recortadas y no se imprime la parte que no queda visible dentro del bloque contenedor
+        inicial.
+    </p>
+    
+    </ol>
+</section>
+</div>
+</div>
+</article>
+                </li>
+            </ol>
+        </li>
+        </ol>
+    </section>
+
+
+    
+</body>
+</html>

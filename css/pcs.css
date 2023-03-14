@@ -1,0 +1,77 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-size: 1em;
+    font-size: 25%;
+
+
+    font-size: rem;/*relativo al tamaño de fuente especificada en el body */
+    padding-left: 10%;
+    text-align: justify;
+    padding-right: 10%;
+    background-image: url(http://mosaicos.mx/wp-content/uploads/2016/02/032.jpg);
+    background-repeat: no-repeat;
+
+
+}
+h1{
+    text-align:center ;
+background-color: blue;
+color: rgb(255, 255, 255);
+}
+h2{
+color: rgb(255, 64, 0);
+
+
+}
+em{
+    color: coral;
+}
+em.termino{
+font-weight: bold;
+
+}
+img{
+    padding: 18px;
+    border-style:ridge ;
+}
+em{
+    color: coral;
+}
+em.termino{
+    color: blueviolet;
+font-weight: bold;
+font-style: normal;
+
+}
+em.valor{
+    border-style: dotted;
+    padding-left:5px ;
+    padding-right: 5px;
+    border-width: thin;
+    
+}
+p.inicial::first-letter{
+    color: orange;
+    font-size: large;
+    font-weight: bolder;
+}
+dt.concepto{
+    color: blueviolet;
+    font-weight: bold;
+}
+div.figura{
+text-align: center;
+
+}
+figure{
+    font-weight: bold;
+
+}
+figcaption{
+    color: blue;
+}
+p#textodescripcion7{
+    font-style: italic;
+    background-color: antiquewhite;
+}
